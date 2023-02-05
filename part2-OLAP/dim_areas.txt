@@ -1,0 +1,15 @@
+You are now connected to database "topmodelsql" as user "daniel".
+DROP TABLE
+CREATE TABLE
+INSERT 0 7
+ area_id |    area     
+---------+-------------
+       1 | Online
+       2 | Crewe
+       3 | London
+       4 | Athens
+       5 | Milan
+       6 | Stockholm
+       7 | Los Angeles
+(7 rows)
+

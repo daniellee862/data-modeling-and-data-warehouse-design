@@ -1,0 +1,18 @@
+You are now connected to database "topmodelsql" as user "daniel".
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+INSERT 0 9
+ rating_id | rating 
+-----------+--------
+         1 |      4
+         2 |      6
+         3 |      2
+         4 |      9
+         5 |      7
+         6 |      3
+         7 |      1
+         8 |      5
+         9 |      8
+(9 rows)
+

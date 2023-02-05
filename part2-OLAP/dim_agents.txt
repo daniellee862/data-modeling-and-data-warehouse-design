@@ -1,0 +1,15 @@
+You are now connected to database "topmodelsql" as user "daniel".
+DROP TABLE
+CREATE TABLE
+INSERT 0 7
+ agent_id |   agent   
+----------+-----------
+        1 | Christian
+        2 | Rose
+        3 | Paul
+        4 | Verity
+        5 | Alex
+        6 | Katherine
+        7 | Kev
+(7 rows)
+

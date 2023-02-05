@@ -1,0 +1,31 @@
+STAR SCHEME IDEAS FOR MODELS DB.
+
+FACT - 
+
+fact_event:
+event_date
+revenue
+
+
+
+DIMENSIONS - 
+
+dim_model:
+model_id (PK)
+model_name
+area
+price_per_event
+
+dim_agent_cat:
+agent_cat_id (PK)
+category
+agent
+
+dim_trait_rating:
+trait_rating_id (PK)
+trait
+rating
+
+dim_brands:
+brands_id(PK)
+brands

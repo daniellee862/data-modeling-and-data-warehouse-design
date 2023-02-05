@@ -1,0 +1,15 @@
+You are now connected to database "topmodelsql" as user "daniel".
+DROP TABLE
+CREATE TABLE
+INSERT 0 7
+ category_id |  category   
+-------------+-------------
+           1 | Promotional
+           2 | Glamour
+           3 | Swimsuit
+           4 | Commercial
+           5 | Parts
+           6 | Fitness
+           7 | Fashion
+(7 rows)
+

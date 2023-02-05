@@ -1,0 +1,89 @@
+You are now connected to database "topmodelsql" as user "salihalborno".
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+INSERT 0 27
+ brand_id |       brand       
+----------+-------------------
+        1 | Amazon
+        2 | Harrods
+        3 | Ikea
+        4 | Marvel Studios
+        5 | Wayfair
+        6 | HSBC
+        7 | Dior
+        8 | Instagram
+        9 | Stella McCartney
+       10 | Chanel
+       11 | H&M
+       12 | Ebay
+       13 | Buff
+       14 | Reebok
+       15 | Marks and Spencer
+       16 | Vinted
+       17 | Aldi
+       18 | Oricle
+       19 | Adidas
+       20 | Listo Burritos
+       21 | Charities
+       22 | Salomon
+       23 | Louboutin
+       24 | Pategonia
+       25 | United Utilities
+       26 | Poundland
+       27 | Nike
+(27 rows)
+
+CREATE TABLE
+INSERT 0 28
+ brand_id | event_id 
+----------+----------
+       19 |       12
+       19 |        4
+       17 |       11
+        1 |        9
+       13 |        1
+       10 |        2
+       21 |       14
+        7 |        2
+       12 |        8
+       11 |        6
+        2 |        5
+        6 |        5
+        3 |        9
+        8 |        8
+       20 |        3
+       23 |        6
+       15 |       13
+        4 |        7
+       27 |        4
+       18 |       13
+       24 |        1
+       26 |       11
+       14 |        4
+       22 |        1
+        9 |        2
+       25 |       10
+       16 |        8
+        5 |        9
+(28 rows)
+
+ALTER TABLE
+ event_id | model_id | area_id | category_id | agent_id | trait_id | rating_id | date_id | revenue 
+----------+----------+---------+-------------+----------+----------+-----------+---------+---------
+        1 |        3 |       7 |           6 |        3 |       13 |         1 |       2 |    1530
+        2 |       11 |       5 |           7 |        4 |        5 |         2 |       9 |    1625
+        3 |       13 |       6 |           4 |        1 |        7 |         3 |       7 |     950
+        4 |       10 |       7 |           6 |        3 |        9 |         4 |       1 | 7214.85
+        5 |        8 |       4 |           3 |        6 |        1 |         4 |      10 | 9899.89
+        6 |        1 |       5 |           7 |        4 |        2 |         5 |      11 | 2999.94
+        7 |       14 |       3 |           5 |        7 |        8 |         5 |       6 | 5177.48
+        8 |        5 |       1 |           1 |        5 |        4 |         5 |       5 |    3458
+        9 |        9 |       6 |           4 |        1 |        3 |         6 |       4 |    1050
+       10 |       12 |       4 |           3 |        6 |       10 |         6 |       8 |     480
+       11 |        2 |       1 |           1 |        5 |       11 |         7 |       7 |  149.85
+       12 |        4 |       3 |           5 |        7 |        6 |         8 |       3 | 1846.74
+       13 |        7 |       2 |           2 |        2 |       12 |         8 |       7 |    1500
+       14 |        6 |       5 |           7 |        4 |       14 |         9 |       8 |    3600
+(14 rows)
+

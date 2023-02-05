@@ -1,0 +1,22 @@
+You are now connected to database "topmodelsql" as user "daniel".
+DROP TABLE
+CREATE TABLE
+INSERT 0 14
+ trait_id |      trait       
+----------+------------------
+        1 | Old-money
+        2 | Pro strutter
+        3 | Architect
+        4 | Influencer
+        5 | Photography
+        6 | Hand modelling
+        7 | Messy eating
+        8 | Card magic
+        9 | High-tops
+       10 | Impromptu crying
+       11 | The dadbod drop
+       12 | Databases
+       13 | Fire_eating
+       14 | Catwalker
+(14 rows)
+
