@@ -1,80 +1,72 @@
-# Top Model
+# Data modelling and data-waraehouse design 📊
 
-## Learning Objectives
+## Objective 🎯
 
--   To be able to refactor a table to 1NF, 2NF and 3NF
--   To be able to implement a star schema
--   To be able to implement an ERD
+Transform existing data on models and modelling agencies into a more organized and efficient structure for analysis. This involved normalizing the data and then implementing a star schema, along with creating Entity Relationship Diagrams (ERDs) to visualize the transformations.
 
-Congratulations! You've been hired by the Northcoders Modelling Agency! 💅
-All of the data we have on our models are currently being held in one big SQL table which you can create locally by running `models.sql`.
-
----
-
-## Our first task is to normalise the data **without mutating** our original data:
-
--   Create new files for each of your Normal Forms
--   Remember that you can print the output of the file to a new file with the command below:
-
-```
-psql -f file_name.sql > file_name.txt
-```
-
-## Part I - OLTP
+-   Refactor a table to 1NF, 2NF and 3NF 📝
+-   Implement a star schema ⭐
+-   Implement an ERD 🗺️
 
 ---
 
-### 1. First Normal Form (1NF)
+## Part I - OLTP 📂
 
-The rules we can follow are:
+### Normalizing the Data **without mutating** our original data:
 
--   We must have no duplicate rows
--   Each cell must only contain a single value
--   Each value cannot be split down further
+In this phase, the focus was on achieving data normalization up to the third normal form (3NF), ensuring data integrity and reducing redundancy.
 
-Print the result to a txt file called `1NF.txt`
+**Step 1: First Normal Form (1NF)** 1️⃣
 
-<br>
+1. Removed duplicate rows.
+2. Ensured each cell contained a single value.
+3. Verified that values couldn't be further subdivided.
 
-### 2. Second Normal Form (2NF)
+Output saved to `1NF.txt`.
 
-We will then need to refactor to 2NF:
+**Step 2: Second Normal Form (2NF)** 2️⃣
 
--   Table must not violate the rules set out by 1NF
--   No partial dependencies - Non-prime attributes must be fully dependant on the candidate key.
+1. Confirmed adherence to 1NF.
+2. Eliminated partial dependencies, ensuring non-prime attributes depended on the candidate key.
 
-Print the result to a txt file called `2NF.txt`
+Output saved to `2NF.txt`.
 
-<br>
+**Step 3: Third Normal Form (3NF)** 3️⃣
 
-### 3. Third Normal Form (3NF)
+1. Validated compliance with 2NF.
+2. Removed transitive dependencies by linking fields to the primary/composite key.
 
-Lastly refactor to 3NF:
+Output saved to `3NF.txt`.
 
--   Table must not violate the rules set out by 2NF
--   No transitive dependencies - fields must be determined by the primary / composite key
+**Step 4: Entity Relationship Diagram (ERD) for Normalized Data** 📈
 
-Print the result to a txt file called `3NF.txt`
+Utilized [dbdiagram.io](https://dbdiagram.io/home) to craft an ERD representing the normalized data in its third normal form. A screenshot of the ERD was captured and added to the repository.
 
-### 4. Entity Relationship Diagram (ERD)
+![third-normal-form](images/OLTP/3NF_ERD.png)
 
-An `ERD` is a helpful visual representation of how relational tables fit together in a database.
-Use the following free software to build an ERD to document the database in it's three forms.
-https://dbdiagram.io/home
-You can save a screen shot to this repo.
+---
 
-## Part II - OLAP
 
-### 1. Building a star schema
+## Part II - OLAP 📂
 
-We want to make our database easier and more efficient to analyse.
-We should redesign the database into a star schema.
+### Implementing a Star Schema ⭐
 
-Things to consider:
+In this phase, the aim was to optimize the database for analysis by transitioning to a star schema, which enhances performance and simplifies querying.
 
--   **dimensions** - what can we extract? What metrics will these allow us to measure?
--   **facts** - what does this table look like? How can do we create the link to dimensions.
+**Step 1: Building a Star Schema**
 
-## 2. Entity Relationship Diagram (ERD)
+1. Identified relevant dimensions for extraction.
+2. Designed fact tables and established connections to dimensions.
 
-Create another ERD to represent how our tables now link together.
+**Step 2: Updated Entity Relationship Diagram (ERD) for Star Schema**
+
+![star-schema-table](images/OLAP/lecture_star_schema_table.png)
+![star-schema-erd](images/OLAP/lecture_star_schema_ERD.png)
+
+
+## Conclusion 🔚
+
+Through a meticulously planned and executed series of steps, the data has been successfully transformed and optimized for analysis. The achievement of normalizing the data and implementing a star schema demonstrates a significant enhancement in data organization and accessibility, setting the stage for more effective modeling and analysis processes.
+
+
+
