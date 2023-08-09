@@ -1,4 +1,4 @@
-# Data modelling and data-waraehouse design 📊
+# Data modelling and data-warehouse design 📊
 
 ## Objective 🎯
 
